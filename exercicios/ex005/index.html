@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        body {
+            background-color: bisque;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        p, div {
+            padding: 20px;
+        }
+
+        div {
+            color: aqua;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Iniciando os estudos de <strong>DOM</strong></h1>
+    <p>Lá vamos nós para mais um sofrimento conjunto isolado</p>
+
+    <p><strong>am?</strong></p>
+
+    <p>Burguer</p>
+
+    <div id="msg">Clique em mim</div>
+    <br>
+    <br>
+    <script>
+        var corpo = document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        
+
+        /*
+        var d = window.document.getElementById('msg')
+        d.style.color = 'white'
+        d.style.background = 'black'
+        */
+
+        var d = window.document.querySelector('div#msg')
+        d.style.background = 'black '
+    </script>
+</body>
+</html>
