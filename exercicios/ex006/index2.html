@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando números</title>
+
+    <style>
+        main {
+            width:600px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        input#txtn1 {
+            margin-left: 110px;
+            margin-top: 100px;
+        }
+
+        div#dados {
+            background-color: rgba(255, 140, 0, 0.233);
+            font-size: 20px;
+            margin-top: 10px;
+            height: 100px;
+            width: 600px;
+            border: black solid 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <h1>Somando Valores</h1>
+
+        <input type="number" name="txtn1" id="txtn1" placeholder="Número" style="text-align: center;" > +
+
+        <input type="number" name="txtn2" id="txtn2" placeholder="Número" style="text-align: center;">
+
+        <input type="button" value="Somar" onclick="somar()">
+
+        <div id="dados">Resultado</div>
+    </main>
+
+    <script>
+        function somar() {
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var dados = window.document.getElementById('dados')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var soma = n1 + n2
+            dados.innerHTML = `<p>A soma entre <ins>${n1}</ins> e <ins>${n2}</ins> é = <strong>${soma}</strong></p>`
+        }
+    </script>
+
+</body>
+</html>

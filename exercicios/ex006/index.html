@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.O.M</title>
+
+    <style>
+        div#container {
+            margin: auto;
+            margin-top: 20%;
+            background-color: bisque;
+            color: black;
+            height: 600px; /* já tá anotado */
+            width: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+        p, script {
+            font-size: 25px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div id="container">
+        <p>Interaja filho</p>
+    </div>
+
+    <script>
+
+        var a = window.document.getElementById('container')
+
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrou)
+        a.addEventListener('mouseleave', saiu)
+
+        function clicar() {
+            a.innerText = 'Num toca em mim não seu esquisito'   
+            a.style.backgroundColor = 'red'
+            a.style.color = 'white'
+        }
+
+        function entrou() {
+            a.innerText = 'Entrou'
+        }
+
+        function saiu() {
+            a.innerText = 'Saiu'
+            a.style.backgroundColor = 'bisque'
+            a.style.color = 'black'
+        }
+
+    </script>
+</body>
+</html>
