@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procedência Pessoal</title>
+</head>
+<body>
+    
+    <h1>Local de fabricação</h1>
+
+    <p>Você foi fabricado em:</p> <input type="text" name="pais" id="pais">
+    <input type="button" value="validar" onclick="validar()">
+
+    <div id="resposta">
+
+    </div>
+
+    <script>
+
+        function validar () {
+
+            var pais = window.document.getElementById('pais')
+            var res = window.document.getElementById('resposta')
+            var opais = String(pais.value)
+            
+            res.innerHTML = '<p>Enfim, pode seguir em frente, seu estranho completamente desconhecido...</p>'
+
+            if (opais == Brasil) {
+                res.innerHTML += `<p>Parece que você tem uma procedência não tão duvidosa quanto a dos outros :)</p>`
+            } else {
+                res.innerHTML += `<p>É, sua fabricação parece levemente inferior a dos brasileiros...</p>`
+            }
+
+
+        }
+        
+    </script>
+
+</body>
+</html>
