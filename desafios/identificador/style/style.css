@@ -35,6 +35,37 @@ main {
     box-shadow: 1px 1px 20px  rgba(0, 0, 0, 0.616);
 }
 
+div{
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+div#res {
+    padding-top: 10px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h2.sub{
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+#txtano {
+    text-align: center;
+    display: block;
+    margin: auto;
+    background-color: rgba(255, 228, 196, 0.596);
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+p{
+    padding-top: 10px;
+}
+
 footer, a {
     padding-top: 25px;
     text-align: center;

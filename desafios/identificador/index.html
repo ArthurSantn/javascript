@@ -3,20 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Identificador</title>
+    <title>Verificador de idade</title>
     <link rel="shortcut icon" href="favicon/sol.png" type="image/png">
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
 
     <header>
-        <h1>FORNEÇA OS DADOS PEDIDOS</h1>
+        <h1>VERIFICADOR DE IDADE</h1>
     </header>
 
     <main>
-        <section>
-            <div></div>
-            <div></div>
+        <section> 
+            <div id="infos">
+                <h2>Ano de nascimento:</h2>
+                <p>
+                    <input type="number" name="txtano" id="txtano" placeholder="ano de nascimento">
+                </p>
+                <h2 class="sub">Sexo:</h2>
+                <p>
+                    <input type="radio" name="optsex" id="m" checked>
+                    <label for="m">Masculino</label>
+                    <input type="radio" name="optsex" id="f">
+                    <label for="f">Feminino</label>
+                </p>
+                <p>
+                    <input type="button" value="Enviar" onclick="enviar()">
+                </p>
+            </div>
+            <div id="res">
+                <p>Seu resultado é:</p>
+            </div>
         </section>
     </main>
 
