@@ -21,14 +21,14 @@
                     <input type="number" name="txtano" id="txtano" placeholder="ano de nascimento">
                 </p>
                 <h2 class="sub">Sexo:</h2>
-                <p>
-                    <input type="radio" name="optsex" id="m" checked>
-                    <label for="m">Masculino</label>
-                    <input type="radio" name="optsex" id="f">
-                    <label for="f">Feminino</label>
+                <p class="group">
+                        <input class="sex" type="radio" name="optsex" id="m" checked>
+                        <label class="texto" for="m">Masculino</label>
+                        <input class="sex" type="radio" name="optsex" id="f">
+                        <label class="texto" for="f">Feminino</label>
                 </p>
                 <p>
-                    <input type="button" value="Enviar" onclick="enviar()">
+                    <input id="botao" type="button" value="Enviar" onclick="enviar()">
                 </p>
             </div>
             <div id="res">

@@ -56,10 +56,71 @@ h2.sub{
 #txtano {
     text-align: center;
     display: block;
+    width: 300px;
+    height: 22px;
     margin: auto;
     background-color: rgba(255, 228, 196, 0.596);
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.363);
+}
+
+.sex, .texto, #botao {
+    cursor: pointer;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+}
+
+.sex {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    border-radius: 50%;
+    
+    border: 2px solid #64c9c9;
+    appearance: none;
+    outline: none;
+}
+
+.sex:before {
+    content: '';
+    position: absolute;
+    height: 13px;
+    width: 13px;
+
+    border-radius: 50%;
+    background-color: #64c9c9;
+}
+
+.texto {
+    padding-left: 7px;
+}
+
+#f {
+    margin-left: 5px;
+}
+
+#botao {
+    width: 100px;
+    height: 25px;
+    background-color: #3CA6A6;
+    border-radius: 15px;
+    border: 0px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+    color: white;
+}
+
+#botao:hover {
+    background-color: #64c9c9;
+    transition: 300ms;
 }
 
 p{
