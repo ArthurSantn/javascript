@@ -76,12 +76,12 @@ h2.sub{
 .sex {
     position: relative;
     display: flex;
+    width: 25px;
+    height: 25px;
     align-items: center;
-    width: 20px;
-    height: 20px;
     justify-content: center;
-    border-radius: 50%;
     
+    border-radius: 50%;
     border: 2px solid #64c9c9;
     appearance: none;
     outline: none;
@@ -90,11 +90,27 @@ h2.sub{
 .sex:before {
     content: '';
     position: absolute;
-    height: 13px;
-    width: 13px;
+    height: 15px;
+    width: 15px;
 
     border-radius: 50%;
     background-color: #64c9c9;
+    opacity: 0;
+    transition: all 170ms ease-in-out;
+}
+
+.sex:checked:before {
+    opacity: 1;
+}
+
+.sex:hover {
+    border-color: rgb(117, 235, 235);
+    background-color: rgba(240, 248, 255, 0.541);
+    transition: 200ms;
+}
+
+.sex:focus {
+    box-shadow: 0px 0px 5px #64c9c9;
 }
 
 .texto {
