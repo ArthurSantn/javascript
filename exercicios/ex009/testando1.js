@@ -1,5 +1,5 @@
 var x = 1
 do {
-    console.log(`contando ${x}`)
-    c++
+    console.log(`Contando ${x}`)
+    x++
 } while (x <= 10)
