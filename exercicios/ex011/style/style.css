@@ -18,6 +18,7 @@ header {
 }
 
 h1 {
+    margin: auto;
     color: white;
     text-align: center;
     font-family: 'Fredoka', Arial, Helvetica, sans-serif;

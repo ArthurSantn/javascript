@@ -10,16 +10,32 @@
 <body onload="carregar()">
 
     <header>
-        <h1></h1>
+        <h1>Vamos contar</h1>
     </header>
 
     <main>
+        <label for="inicio">Início: </label>
+        <input type="number" name="inicio" id="inicioid"> <br>
         
+        <label for="fim">Fim: </label>        
+        <input type="number" name="fim" id="fimid"> <br>
+
+        <label for="passo">Passo: </label>
+        <input type="number" name="passo" id="passoid"> <br>
+
+        <input type="button" value="Contar" onclick="enviar()">
+
+        <section>
+            <h2>Contando:</h2>
+            <div id="container"></div>
+        </section>
     </main>
 
     <footer>
         *Made by <a href="https://www.linkedin.com/in/arthursantanaprogramador/" target="_blank" rel="external">Arthur Santana</a>*
     </footer>
+
+    <script src="script/script.js"></script>
 
 </body>
 </html>
