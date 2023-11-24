@@ -29,11 +29,58 @@ h1 {
 main {
     background-color: white;
     width: 600px;
-    height: 400px;
     margin: auto;
     margin-top: 30px;
     border-radius: 10px;
     box-shadow: 1px 1px 20px  rgba(0, 0, 0, 0.616);
+}
+
+h2 {
+    padding-top: 10px;
+    margin-left: 10px;
+}
+
+.nome {
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.box {
+    margin: 10px;
+    background-color: rgba(250, 235, 215, 0.548);
+    border-radius: 3px;
+
+    text-align: center;
+    font-size: 17px;
+}
+
+#fimid {
+    margin-left: 25px;
+}
+
+#button {
+    height: 25px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: 0px;
+
+    background-color: #3CA6A6;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+#button:hover {
+    background-color: #57cccc;
+    transition: 300ms;
+}
+
+#container {
+    margin: 10px;
 }
 
 footer, a {

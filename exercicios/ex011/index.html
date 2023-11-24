@@ -7,27 +7,29 @@
     <link rel="shortcut icon" href="favicon/sol.png" type="image/png">
     <link rel="stylesheet" href="style/style.css">
 </head>
-<body onload="carregar()">
+<body>
 
     <header>
         <h1>Vamos contar</h1>
     </header>
 
     <main>
-        <label for="inicio">Início: </label>
-        <input type="number" name="inicio" id="inicioid"> <br>
+        <label for="inicio" class="nome">Início: </label>
+        <input type="number" name="inicio" id="inicioid" class="box" placeholder="começo"> <br>
         
-        <label for="fim">Fim: </label>        
-        <input type="number" name="fim" id="fimid"> <br>
+        <label for="fim" class="nome">Fim: </label>        
+        <input type="number" name="fim" id="fimid" class="box" placeholder="fim"> <br>
 
-        <label for="passo">Passo: </label>
-        <input type="number" name="passo" id="passoid"> <br>
+        <label for="passo" class="nome">Passo: </label>
+        <input type="number" name="passo" id="passoid" class="box" placeholder="passos"> <br>
 
-        <input type="button" value="Contar" onclick="enviar()">
+        <input id="button" type="button" value="Contar" onclick="enviar()">
 
         <section>
             <h2>Contando:</h2>
-            <div id="container"></div>
+            <div id="container">
+                
+            </div>
         </section>
     </main>
 
