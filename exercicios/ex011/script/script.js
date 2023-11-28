@@ -8,6 +8,8 @@ if (start.value.length == 0 || end.value.length == 0 || step.value.length == 0) 
     res.innerHTML = 'Não consigo contar...'
 } else {
 
+    res.innerHTML = ''
+
     res.innerHTML = 'Contando: <br>'
     var x = Number(start.value)
     var y = Number(end.value)

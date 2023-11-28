@@ -7,19 +7,33 @@
     <link rel="shortcut icon" href="favicon/calculadora.png" type="image/png">
     <link rel="stylesheet" href="style/style.css">
 </head>
-<body onload="carregar()">
+<body>
 
     <header>
-        <h1></h1>
+        <h1>Tabuada</h1>
     </header>
 
     <main>
-        
+        <div>
+            <h2>Número</h2>
+                <p> 
+                    <input type="number" name="numero" id="numeroid" placeholder="digite aqui"> <br> 
+                    <input type="button" class="button" value="Gerar tabuada" onclick="tabuada()">
+                </p>
+        </div>
+        <div>
+            <select name="tabuada" id="tabuadaid" size="10">
+                <option>Digite um número</option>
+            </select>
+            <input type="reset" value="Limpar" class="button" >
+        </div>
     </main>
 
     <footer>
         *Made by <a href="https://www.linkedin.com/in/arthursantanaprogramador/" target="_blank" rel="external">Arthur Santana</a>*
     </footer>
+
+<script src="script/script.js"></script>
 
 </body>
 </html>
