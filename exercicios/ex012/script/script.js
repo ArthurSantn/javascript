@@ -20,4 +20,15 @@ function tabuada() {
 
 }
 
+function limpar() {
+    let clear = document.getElementById('resetid')
+    let b = document.getElementById('tabuadaid')
+
+    if (b.value.lenght > 0 ) {
+    
+    } else {
+        b.innerHTML = ''
+    }
+}
+
 //${x} x ${c} = ${x*c} 
