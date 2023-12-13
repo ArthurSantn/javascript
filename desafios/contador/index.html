@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="shortcut icon" href="favicon/numeros.png" type="image/png">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+
+    <main>
+        <label for="inicio" class="nome">Início: </label>
+        <input type="number" name="inicio" id="inicioid" class="box" placeholder="começo"> <br>
+        
+        <label for="fim" class="nome">Fim: </label>        
+        <input type="number" name="fim" id="fimid" class="box" placeholder="fim"> <br>
+
+        <label for="passo" class="nome">Passo: </label>
+        <input type="number" name="passo" id="passoid" class="box" placeholder="passos"> <br>
+
+        <input id="button" type="button" value="Contar" onclick="enviar()">
+
+        <section>
+            <h2>Contando:</h2>
+            <div id="container">
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        *Made by <a href="https://www.linkedin.com/in/arthursantanaprogramador/" target="_blank" rel="external">Arthur Santana</a>*
+    </footer>
+
+    <script src="script/script.js"></script>
+
+</body>
+</html>
