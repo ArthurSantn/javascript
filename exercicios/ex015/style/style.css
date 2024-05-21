@@ -35,6 +35,71 @@ main {
     box-shadow: 1px 1px 20px  rgba(0, 0, 0, 0.616);
 }
 
+p {
+    text-align: center;
+
+    padding-top: 30px;
+}
+
+#numid {
+    text-align: center;
+
+    background-color: #ff770071;
+    border-radius: 10px;
+    border: rgba(80, 78, 78, 0.719) 2px dashed;
+
+    margin-top: 15px;
+    padding: 5px;
+}
+
+#numsid {
+    font-family: Arial, Helvetica, sans-serif;
+
+    border-radius: 15px;
+    border: rgba(80, 78, 78, 0.719) 2px dashed;
+
+    /*Espaçamento*/
+    display: flex;
+    margin: auto;
+    margin-top: 15px;
+    padding-left: 100px;
+    padding-right: 100px;
+    
+}
+
+#aplicar {
+    height: 25px;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 0px;
+
+    background-color: #3CA6A6;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+#finalizar {
+    height: 25px;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 0px;
+
+    background-color: #3CA6A6;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+#finalizar:hover, #aplicar:hover {
+    background-color: #57cccc;
+    transition: 300ms;
+}
+
 footer, a {
     padding-top: 25px;
     text-align: center;
