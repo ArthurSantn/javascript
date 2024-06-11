@@ -28,14 +28,14 @@ h1 {
 main {
     background-color: white;
     width: 600px;
-    height: 400px;
+    padding-bottom: 10px;
     margin: auto;
     margin-top: 30px;
     border-radius: 10px;
     box-shadow: 1px 1px 20px  rgba(0, 0, 0, 0.616);
 }
 
-p {
+.geral {
     text-align: center;
 
     padding-top: 30px;
@@ -100,6 +100,11 @@ p {
     transition: 300ms;
 }
 
+#final {
+    padding-left: 30px;
+    line-height: 35px;
+    margin: auto;
+}
 footer, a {
     padding-top: 25px;
     text-align: center;
